@@ -2,3 +2,13 @@ site_name: My Docs
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+
+markdown_extensions:
+  - admonition
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Architecture: architecture.md
