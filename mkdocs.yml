@@ -14,8 +14,8 @@ nav:
     - Getting Started: home/getting_started.md
   - About: about.md
   - Research:
-    - Research1: research/research1.md
-    - Research2: research/research2.md
+    - Terminology: research/terminology.md
+    - Experiments: research/experiments.md
   - Development:
     - Architecture: development/architecture.md
     - Coding Practices: development/coding_practices.md
