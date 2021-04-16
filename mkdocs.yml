@@ -15,6 +15,7 @@ nav:
   - About: about.md
   - Research:
     - Terminology: research/terminology.md
+    - Terminology 2: research/terminology2.md
     - Experiments: research/experiments.md
   - Development:
     - Architecture: development/architecture.md
