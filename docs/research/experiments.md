@@ -33,7 +33,7 @@ The Stevens experiment presents users with 3 plots. The user then must adjust th
 - **Paradigm**: Estimation
 - **Adjustment Type**: Method of Adjustments
 - **Response Type**: Stimulus Level
-- **Dependent Measure**: Precision
+- **Dependent Measure**: Accuracy
 
 The Estimation experiment presents users with 2 shapes side-by-side. The task involves having to adjust the size of the modifiable shape so that it is the same size as the reference shape.
 
