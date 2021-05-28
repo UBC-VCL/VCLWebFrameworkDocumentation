@@ -1,0 +1,909 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>Terminology - VCL Correlation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#terminology" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="VCL Correlation" class="md-header__button md-logo" aria-label="VCL Correlation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VCL Correlation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Terminology
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../home/welcome/" class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Research
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../development/architecture/" class="md-tabs__link">
+        Development
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="VCL Correlation" class="md-nav__button md-logo" aria-label="VCL Correlation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    VCL Correlation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        Home
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/welcome/" class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Research
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Terminology
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Terminology
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#describing-an-experiment" class="md-nav__link">
+    Describing an Experiment
+  </a>
+  
+    <nav class="md-nav" aria-label="Describing an Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paradigms" class="md-nav__link">
+    Paradigms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjustment-types" class="md-nav__link">
+    Adjustment Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-types" class="md-nav__link">
+    Response Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependent-measures" class="md-nav__link">
+    Dependent Measures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#condition-identifiers" class="md-nav__link">
+    Condition Identifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Condition Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-experiment" class="md-nav__link">
+    Base Experiment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trial-structure" class="md-nav__link">
+    Trial Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balancing" class="md-nav__link">
+    Balancing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graph-types" class="md-nav__link">
+    Graph Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experiments/" class="md-nav__link">
+        Experiments
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Development
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#describing-an-experiment" class="md-nav__link">
+    Describing an Experiment
+  </a>
+  
+    <nav class="md-nav" aria-label="Describing an Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paradigms" class="md-nav__link">
+    Paradigms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjustment-types" class="md-nav__link">
+    Adjustment Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-types" class="md-nav__link">
+    Response Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependent-measures" class="md-nav__link">
+    Dependent Measures
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#condition-identifiers" class="md-nav__link">
+    Condition Identifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Condition Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-experiment" class="md-nav__link">
+    Base Experiment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trial-structure" class="md-nav__link">
+    Trial Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balancing" class="md-nav__link">
+    Balancing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graph-types" class="md-nav__link">
+    Graph Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="terminology">Terminology</h1>
+<p>Below is common terminology the lab uses when describing experiments.</p>
+<h2 id="describing-an-experiment">Describing an Experiment</h2>
+<p>Every experiment is defined using a <em>paradigm</em>, an <em>adjustment type</em>, a <em>response type</em>, and a <em>dependent measure</em>.</p>
+<p>Experiments are further broken down into subdivisions called <em>conditions</em>. They are iterations on the same general experiment type with differences in things such as stimuli, balancing, or trial structure.</p>
+<ul>
+<li><strong>Condition</strong>: Dictated by the task, the method(s) used, and the stimuli type.</li>
+<li><strong>Subcondition</strong>: Individual experiment blocks containing a number of trials. Typically defined by a set of stable constants, demarked by independent variables.</li>
+<li><strong>Trial</strong>: Marked by the user making a meaningful response/input that is purposely recorded.<ul>
+<li>E.g. I am trying to adjust the correlation of a specific plot to be the midpoint between a plot with a high correlation, and a plot with a lower correlation. The final correlation that I have adjusted marks the relevant trial data to be saved.</li>
+</ul>
+</li>
+</ul>
+<h3 id="paradigms">Paradigms</h3>
+<p>According to Elliot et. al., "Paradigms are the specific visual tasks viewers complete when using a visualization." </p>
+<ul>
+<li><strong>Classification</strong>: Viewers identify a stimulus by categorizing it.  Viewers may classify an entire display, specific regions within a display, or objects.</li>
+<li><strong>Recognition</strong>: Viewers indicate whether they saw a stimulus previously. A common example of this task is presenting a set of images, and then later presenting a second set of images composed of new images as well as ones from the original set.  Viewers then indicate which images in the second set is old or new.</li>
+<li><strong>Localization</strong>: The viewer indicates the location of a stimulus.  Some examples could be: clicking where a stimulus previously was, or pressing a key to indicate which region of a screen contains an object of interest.</li>
+<li><strong>Detection</strong>: Requires the viewer to indicate whether or not they perceive the presence of a stimulus.  Two common types of detection are visual search and change detection.</li>
+<li><strong>Rapid Serial Visual Presentation (RSVP)</strong>: In the RSVP paradigm, viewers are shown a set of images quickly in a sequence, with at least one target image. Viewers then identify either the target image or target category (e.g. press the button when you see a positive correlation).</li>
+<li><strong>Matching</strong>: The viewer adjusts one stimulus until it matches another. For instance, adjusting the size of a square until it has the same area as a rectangle also present on the screen.</li>
+<li><strong>Discrimination</strong>: Viewers make comparative judgments about the magnitude of two stimuli, often side-by-side. For example: indicating which of two images has a higher total luminance.</li>
+<li><strong>Identification</strong>: Viewers respond with the identity of the stimulus using open-ended answers.</li>
+<li><strong>Estimation</strong>: Viewers directly estimate some value of a continuous feature in a display. Estimation paradigm experiments differ from the classification paradigm: where a viewer might classify a correlation as "low" or "steep", an estimation paradigm would require them to produce the magnitude numerically as "0.2" or "0.8".</li>
+</ul>
+<h3 id="adjustment-types">Adjustment Types</h3>
+<ul>
+<li><strong>Method of Limits [MoL]</strong>: The researcher steadily adjusts a property of a stimulus until it is seen or no longer seen by the participant.  For example, displaying white dots on a white background, and darkening them until they are perceptible.  This can be done either as ascending or descending, and it is not uncommon to see both within the same experiment.</li>
+<li><strong>Method of Adjustments [MoA]</strong>: Similar to Method Limits, except it is the user who does the stimulus adjustments.  For instance, a user adjusting the brightness of dots until they are perceptible or imperceptible. </li>
+<li><strong>Method of Constant Stimuli [MoCS]</strong>: The researcher presents  viewers with random levels of a target property, and the user is asked to draw inferences.  From the previous examples, dots would be shown at various brightness levels, and the user indicates whether or not they are present or absent each trial.</li>
+<li><strong>Adaptive Psychophysical Procedures [APP]</strong>: Researchers adjust visualizations for users based on their current performance relative to a threshold. A common APP used within the VCL Web Framework is staircasing, as seen in the JND experiment.  Users indicate which of two scatterplots is more correlated.  If the user responds correctly, the next pair of scatterplots have closer correlation values; if they respond incorrectly, the correlation values are farther apart. The adjustments continue until a steady-state criteria is met (e.g. 50% accuracy over <em>n</em> trials).</li>
+</ul>
+<h3 id="response-types">Response Types</h3>
+<ul>
+<li>
+<p><strong>Stimulus Level</strong>: Users give direct reports indicating perceived values. For example, dragging a slider to indicate the average height of bars in a bar chart. Viewers can report stimulus levels verbally, by typing in a value, or visually by recreating the stimulus level.</p>
+</li>
+<li>
+<p><strong>2AFC</strong>: Two-alternative forced-choice tasks give viewers two options of response after perceiving certain stimuli. For example, being shown two stimuli and asking users to indicate which one was darker. Two common choices for 2AFC are comparison and categorization.</p>
+</li>
+<li>
+<p><strong>NAFC</strong>: The N-alternative forced-choice task is a scaled-up version of the 2AFC. For example, a 2AFC task might involve users indicating whether or not a chart matches a regression line 'yes' or 'no', while an NAFC might provide several charts and the user must choose one that matches.</p>
+</li>
+</ul>
+<h3 id="dependent-measures">Dependent Measures</h3>
+<p><strong>Direct Dependent Measures</strong>: A single number directly measuring how well people process visual information. Some examples:</p>
+<ul>
+<li><strong>Accuracy</strong>: Measures how close to the true value are people's judgments. Measured in two ways: percentage correct (how often they get the answer right), and error (how close they were).</li>
+<li><strong>Response Time</strong>: Measures how quickly a task with one stimulus is completed.</li>
+<li><strong>Precision</strong>: The variability of participants' answers, measured as a threshold of performance, for example, the level of brightness at which a stimulus becomes visible. One of the most common of these is a just noticeable difference (JND), a threshold at which people can generally detect a difference.</li>
+</ul>
+<p><strong>Model-Based Dependent Measures</strong>: A model generated by factors such as (but not limited to) reaction time and accuracy.</p>
+<ul>
+<li><strong>Performance Slope</strong>: Using accuracy or RT to model how these measures change as a function of the difficulty of the task. E.g. how quickly and accurately can a participant locate a target as the number of targets increases.</li>
+<li><strong>Psychometric Function</strong>:  Models how performance changes (e.g., the number of correct or incorrect decisions) as a function of design (e.g. the luminance range of a colormap). </li>
+<li><strong>Sensitivity &amp; Bias Detection</strong>:  Models performance as a function of sensitivity (change as the data or design changes) and bias (tendency to a certain response). </li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><strong>Balancing</strong>: the ways in which the subconditions for a given condition are ordered.<ul>
+<li>Random</li>
+<li>Latin-Square</li>
+</ul>
+</li>
+<li><strong>Graph Type</strong>: e.g. scatter plots, ring plots, strip plots, shapes </li>
+<li><strong>Graphical Manipulation</strong>: <ul>
+<li>May be on how the points are plotted e.g. for strip plots, a y coordinate defines the horizontal translation of the "strip" and x coordinate defines the height of the "strip".</li>
+<li>May be in terms of how many distributions are plotted on the same graph e.g. on the same axes, we can have TWO scatter plots with different correlations.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="condition-identifiers">Condition Identifiers</h2>
+<p>Each condition is uniquely defined by 4 properties.</p>
+<h3 id="base-experiment">Base Experiment</h3>
+<p>The experiment that the condition is an iteration of.</p>
+<h3 id="trial-structure">Trial Structure</h3>
+<p>The trial structure represents the range or pattern of correlation values, and defines a set of constants for each subcondition. Each condition can follow these pattern of values, or use its own custom structure.</p>
+<p>The two main types of patterns are Design or Foundational.</p>
+<ul>
+<li><strong>Foundational</strong> : 17 subconditions, base correlation is in the range of <code>[0.0, 0.9]</code> in <code>0.1</code> increments.</li>
+<li><strong>Design</strong>       : 15 subconditions, grouped into five sets of base correlation values set at <code>0.3, 0.6, 0.9</code>.</li>
+<li><strong>Estimation</strong></li>
+<li><strong>Custom</strong>       : used when a condition does not follow any of the above structures.</li>
+</ul>
+<h3 id="balancing">Balancing</h3>
+<p>How subconditions in a given condition get ordered.</p>
+<ul>
+<li><strong>Randomized</strong> : Purely random.</li>
+<li><strong>Latin Square</strong> : An <em>n</em> &#215; <em>n</em> array of <em>n</em> different elements such that each element will occur exactly once in each column and once in each row.  For example, a 3 &#215; 3 Latin Square would be ordered like this:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>A</td>
+<td>B</td>
+</tr>
+<tr>
+<td>B</td>
+<td>C</td>
+<td>A</td>
+</tr>
+<tr>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+<p>The objective of a Latin Square is to have participants with unique subcondition orderings.  Additionally, it helps control randomness in such a way that biases are reduced, e.g. subcondition <em>A</em> is not randomly selected first at a disproportionate amount. </p>
+<h3 id="graph-types">Graph Types</h3>
+<p>The type of graph used in the visualization.</p>
+<ul>
+<li><strong>Scatter</strong> : Scatterplots.</li>
+<li><strong>Strip</strong> : Strip plots.</li>
+<li><strong>Ring</strong> : Ring plots.</li>
+<li><strong>Shapes</strong> : Shapes appearing side by side.</li>
+</ul>
+<h3 id="attributes">Attributes</h3>
+<p>Any given condition will always have a base, trial structure, balancing and graph type. However, they will also have a set of variables that manipulate different aspects of the distribution, graphical properties of the visualization, and non-graphical properties such as having a custom instruction set. </p>
+<p>Here is a non-comprehensive list of properties that could be manipulated by a condition.</p>
+<ul>
+<li><strong>Experimental attributes</strong>:<ul>
+<li>Distribution type.</li>
+<li>Base correlation of the reference plot.</li>
+<li>Whether the correlation converges from above or below.</li>
+<li>Complete list of experimental attributes <a href="/VCLWebFramework/manual/supported_properties.html#experimental-attributes">here</a>.</li>
+</ul>
+</li>
+<li><strong>Graphical attributes</strong>: <ul>
+<li>Some examples if <code>plot type = scatter</code>:<ul>
+<li>Point shape</li>
+<li>Point color</li>
+<li>Point size</li>
+</ul>
+</li>
+<li>Some examples if <code>plot type = strip</code>:<ul>
+<li>Line length</li>
+<li>Line width</li>
+</ul>
+</li>
+<li>Complete list of graphical attributes <a href="/VCLWebFramework/manual/supported_properties.html#experimental-attributes">here</a>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>Definitions adapted from:</p>
+<p>Elliott, M. A., Nothelfer, C., Xiong, C., &amp; Szafir, D. A. (2021). A Design Space of Vision Science Methods for Visualization Research. <em>IEEE Transactions on Visualization and Computer Graphics</em>, 27(2), 1117–1127. <a href="https://doi.org/10.1109/tvcg.2020.3029413">https://doi.org/10.1109/tvcg.2020.3029413</a> </p>
+<p>Pelli, D. G., &amp; Farell, B. (2010). Psychophysical methods. In M. Bass, C. DeCusatis. J. Enoch, V. Lakshminarayanan, G. Li, C. MacDonald, V. Mahajan &amp; E. V. Stryland (Eds.), <em>Handbook of Optics. Third Edition, Volume III: Visioo and Vision Optics</em> (pp. 3.1-3.12). New York: McGraw-Hill. <a href="https://denispelli.com/pubs/pelli2010methods.pdf">https://denispelli.com/pubs/pelli2010methods.pdf</a></p>
+<hr />
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../../about/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              About
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../experiments/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Experiments
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+    
+  </body>
+</html>
