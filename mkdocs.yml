@@ -18,4 +18,4 @@ nav:
     - Research2: research/research2.md
   - Development:
     - Architecture: development/architecture.md
-    - Coding Practices: development/coding_practices.md
+    - Getting Started: development/getting_started.md

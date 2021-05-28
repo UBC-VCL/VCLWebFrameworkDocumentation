@@ -14,7 +14,7 @@
     
     
       
-        <title>Architecture - My Docs</title>
+        <title>Architecture - VCL Correlation</title>
       
     
     
@@ -57,6 +57,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#architecture" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -66,7 +71,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs">
+    <a href="../.." title="VCL Correlation" class="md-header__button md-logo" aria-label="VCL Correlation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -79,7 +84,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            My Docs
+            VCL Correlation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -222,13 +227,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs">
+    <a href="../.." title="VCL Correlation" class="md-nav__button md-logo" aria-label="VCL Correlation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    My Docs
+    VCL Correlation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -392,10 +397,55 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Architecture
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Architecture
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flow-diagram" class="md-nav__link">
+    Flow Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiment-application-architecture" class="md-nav__link">
+    Experiment Application Architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    Sequence Diagram
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -426,15 +476,87 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flow-diagram" class="md-nav__link">
+    Flow Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiment-application-architecture" class="md-nav__link">
+    Experiment Application Architecture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    Sequence Diagram
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Architecture</h1>
-                
-                
+                <h1 id="architecture">Architecture</h1>
+<div class="admonition note">
+<p class="admonition-title">Note to myself</p>
+<ul>
+<li>What do new developer need to know?<ul>
+<li>Architecture</li>
+<li>Main technologies</li>
+<li>GitHub</li>
+</ul>
+</li>
+<li>What should lab members know when I am gone?<ul>
+<li>Documentation should be clear enough that I am not contacted for help once I leave.</li>
+</ul>
+</li>
+<li>Coding components<ul>
+<li>jsPsych library + plugin</li>
+<li>Experiment class</li>
+<li>Timeline</li>
+<li>Graph generation</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="flow-diagram">Flow Diagram</h2>
+<p><img alt="Flow Diagram" src="../images/flow_diagram.png" /></p>
+<h2 id="experiment-application-architecture">Experiment Application Architecture</h2>
+<p><img alt="Experiment Application Architecture" src="../images/application_architecture.png" /></p>
+<p>Experiments are displayed on the browser (client) with a URL created by Heroku (<a href="https://vcl-web.herokuapp.com" target="_blank">https://vcl-web.herokuapp.com</a>).</p>
+<h2 id="sequence-diagram">Sequence Diagram</h2>
+<p><img alt="Sequence Diagram" src="../images/sequence_diagram.png" /></p>
                 
               
               
