@@ -1,0 +1,904 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.3">
+    
+    
+      
+        <title>Getting Started - VCL Correlation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1655a90d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="VCL Correlation" class="md-header__button md-logo" aria-label="VCL Correlation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VCL Correlation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../home/welcome/" class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../research/research1/" class="md-tabs__link">
+        Research
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../architecture/" class="md-tabs__link md-tabs__link--active">
+        Development
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="VCL Correlation" class="md-nav__button md-logo" aria-label="VCL Correlation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    VCL Correlation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        Home
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/welcome/" class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Research
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/research1/" class="md-nav__link">
+        Research1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/research2/" class="md-nav__link">
+        Research2
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Development
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Getting Started
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-researcher-onboarding" class="md-nav__link">
+    Technical Researcher Onboarding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisite-knowledge-technical-researcher" class="md-nav__link">
+    Prerequisite Knowledge - Technical Researcher
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisite Knowledge - Technical Researcher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jspsych" class="md-nav__link">
+    JsPsych
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3" class="md-nav__link">
+    D3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-developer-onboarding" class="md-nav__link">
+    Software Developer Onboarding
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Developer Onboarding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript_1" class="md-nav__link">
+    JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressjs-nodejs-npm" class="md-nav__link">
+    Express.js + Node.js + NPM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-apis-and-http" class="md-nav__link">
+    Web APIs and HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jspsych_1" class="md-nav__link">
+    JsPsych
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-debt-and-writing-good-code" class="md-nav__link">
+    Technical Debt and Writing “Good” Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-researcher-onboarding" class="md-nav__link">
+    Technical Researcher Onboarding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisite-knowledge-technical-researcher" class="md-nav__link">
+    Prerequisite Knowledge - Technical Researcher
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisite Knowledge - Technical Researcher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript" class="md-nav__link">
+    JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jspsych" class="md-nav__link">
+    JsPsych
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3" class="md-nav__link">
+    D3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-developer-onboarding" class="md-nav__link">
+    Software Developer Onboarding
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Developer Onboarding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github_1" class="md-nav__link">
+    Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript_1" class="md-nav__link">
+    JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expressjs-nodejs-npm" class="md-nav__link">
+    Express.js + Node.js + NPM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-apis-and-http" class="md-nav__link">
+    Web APIs and HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jspsych_1" class="md-nav__link">
+    JsPsych
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-debt-and-writing-good-code" class="md-nav__link">
+    Technical Debt and Writing “Good” Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="getting-started">Getting Started</h1>
+<p>This onboarding tutorial is meant to supplement and guide you so that you can dive into working with us on our VCL web framework</p>
+<p>You should take the time to go over the <a href="../architecture">Architecture</a> section in addition to the role that you are onboarding for (either ‘Software Developer’ or ‘Technical Researcher’, you <strong>don’t have to read both</strong>). </p>
+<p>Please keep in mind that roles in our team are not rigid, and you will not be pigeonholed into a single role. The idea of splitting up roles into ‘Software Developer’ and ‘Technical Researcher’ stemmed from the necessity of simplifying the onboarding process, as the codebase is quite daunting for new members initially. You will likely onboard with the role that you are interested in, but after onboarding, the role that you have within our team will likely be quite fluid depending on the needs of the lab and your personal goals and interests.</p>
+<p>Lastly, as you probably know, Google and StackOverflow will be your best friend when working with a new codebase, and if you have any questions, feel free to message our senior members on Slack. The tutorial will assume that you have little baseline knowledge of our tech stack, but feel free to skip over parts that you are already familiar with.</p>
+<h2 id="technical-researcher-onboarding">Technical Researcher Onboarding</h2>
+<p>If you’ve chosen this route, you will likely work with developing experiments/conditions for research purposes. You might even be a COGS 402 student, as we’ve noticed many past members go with this path as a student in that course. This section will provide some background on what we feel are the necessary skills to succeed in this role.</p>
+<h2 id="prerequisite-knowledge-technical-researcher">Prerequisite Knowledge - Technical Researcher</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please feel free to skip over the skills you are already experienced with.</p>
+</div>
+<h3 id="github">Github</h3>
+<p>Github is a hosting platform for Git version control, and it allows different users to remotely collaborate on the same project. We use Github to host our VCL web framework repository. The main skills you will need with regards to git are understanding branches, commits, and pull requests. Please refer to this <a href="https://guides.github.com/activities/hello-world/">beginner guide</a> to learn more.</p>
+<p>The code review process for our team ensures that the code written fits the lab’s coding standards and does not introduce unwanted bugs. We don’t necessarily have formal code reviewers assigned as of right now, but generally speaking, you can assign any senior coding team member to review a branch pull request.</p>
+<p>Popular Git GUIs: (You can use a GUI or just Git Bash whichever is most comfortable for you)</p>
+<ul>
+<li><a href="https://www.sourcetreeapp.com/">SourceTree</a></li>
+<li><a href="https://www.gitkraken.com/">GitKraken</a></li>
+<li><a href="https://desktop.github.com/">GitHub Desktop</a></li>
+</ul>
+<p><a href="https://git-scm.com/downloads">Download Git</a></p>
+<h3 id="javascript">JavaScript</h3>
+<p>We recommend understanding the basics of Javascript and HTML before attempting to understand the framework. Here are a few resources:</p>
+<ul>
+<li><a href="https://javascript.info/">JavaScript</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript Mozilla documentation</a></li>
+<li><a href="https://www.w3schools.com/html/">HTML</a></li>
+</ul>
+<p>The comprehensive references are mainly useful when writing code and you might forget the language syntax.</p>
+<h3 id="jspsych">JsPsych</h3>
+<p>jsPsych is the backbone of our application and is the main reason why we transitioned from a Java framework to a JavaScript framework back in 2018.</p>
+<p>JsPsych is the go-to JavaScript library for running psych experiments in a browser. The timeline array provides an intuitive way to design and structure experiments for both developers and researchers.</p>
+<p>The jsPsych documentation provides a comprehensive guide for how to use the library. We recommend checking out their “Hello World” and “Simple Reaction Time Task” Tutorials:</p>
+<ul>
+<li><a href="https://www.jspsych.org/tutorials/hello-world/">Hello World Tutorial</a></li>
+<li><a href="https://www.jspsych.org/tutorials/rt-task/">rt-task Tutorial</a></li>
+</ul>
+<h3 id="d3">D3</h3>
+<p>D3 is a data visualization library for JavaScript. We use D3 to generate the plots for all of the experiments that we run. We recommend becoming familiar with <a href="https://github.com/d3/d3/wiki">D3</a> if you are creating a new condition.</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Congrats on finishing the Technical Researcher section! You can continue to the concluding section now.</p>
+</div>
+<h2 id="software-developer-onboarding">Software Developer Onboarding</h2>
+<p>If you’ve chosen this route, you will be working with the framework as a whole to develop new features, fix bugs, and support researchers in developing new conditions and experiments. This section will provide some background on what we feel are the necessary skills to succeed in this role.</p>
+<div class="admonition note">
+<p class="admonition-title">Prerequisite Knowledge</p>
+<p>Please feel free to skip over the skills you are already experienced with.</p>
+</div>
+<h3 id="github_1">Github</h3>
+<p>Github is a hosting platform for Git version control, and it allows different users to remotely collaborate on the same project. We use Github to host our VCL web framework repository. The main skills you will need with regards to git are understanding branches, commits, and pull requests. Please refer to this <a href="https://guides.github.com/activities/hello-world/">beginner guide</a> to learn more.</p>
+<p>The code review process for our team ensures that the code written fits the lab’s coding standards and does not introduce unwanted bugs. We don’t necessarily have formal code reviewers assigned as of right now, but generally speaking, you can assign any senior coding team member to review a branch pull request.</p>
+<p>Popular Git GUIs: (You can use a GUI or just Git Bash whichever is most comfortable for you)</p>
+<ul>
+<li><a href="https://www.sourcetreeapp.com/">SourceTree</a></li>
+<li><a href="https://www.gitkraken.com/">GitKraken</a></li>
+<li><a href="https://desktop.github.com/">GitHub Desktop</a></li>
+</ul>
+<p><a href="https://git-scm.com/downloads">Download Git</a></p>
+<h3 id="javascript_1">JavaScript</h3>
+<p>We recommend understanding the basics of Javascript and HTML before attempting to understand the framework. Here are a few resources:</p>
+<ul>
+<li><a href="https://javascript.info/">JavaScript</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript Mozilla documentation</a></li>
+<li><a href="https://www.w3schools.com/html/">HTML</a></li>
+<li><a href="https://www.w3schools.com/css/">CSS</a></li>
+<li><a href="https://api.jquery.com/">jQuery</a></li>
+</ul>
+<p>The comprehensive references are mainly useful when writing code and you might forget the language syntax.</p>
+<h3 id="expressjs-nodejs-npm">Express.js + Node.js + NPM</h3>
+<p>Node.js is a JavaScript runtime built on the Chrome V8 engine. One of the primary ways it is used is to allow Javascript code to be run server-side. Think of Node.js as a way to run Javascript code similarly to how Java or Python code are run using their respective runtime environments. Node.js is just a way for us to run Javascript code outside of a browser environment.</p>
+<p>Along with Node.js we use a tool called Node Package Manager (npm). npm is a package registry that contains Node.js code libraries which are useful for development. It is used to handle dependency management, version management, and package installation primarily through the CLI.</p>
+<p>Express is a web application framework and standard server framework for Node.js, and it provides a bunch of features for building web-apps and APIs. We use express to handle routing (GET and POSTrequests), middleware functions (functions called when a request is received on the specified URL), and also start the localhost server for development testing.</p>
+<ul>
+<li><a href="https://expressjs.com/en/guide/routing.html">Express Routing</a></li>
+<li><a href="https://expressjs.com/en/guide/writing-middleware.html">Express Middleware</a></li>
+<li><a href="https://stackoverflow.com/questions/38306569/what-does-body-parser-do-with-express">body-parser</a> </li>
+</ul>
+<h3 id="web-apis-and-http">Web APIs and HTTP</h3>
+<p>Application Programming Interfaces (APIs) are a way for a web client to interact with a web service and utilizes the Hypertext Transfer Protocol (HTTP) to perform queries. APIs written with ExpressJS are composed of many routes and middleware functions, and each route has one middleware function associated with it.</p>
+<p>Routes are used to define the “endpoint” or specific URL in which the request is expected to occur. Middleware functions define the behaviour of the API when a certain request is made on a specified URL from the routing. Middleware functions also define expected information in a request, and it also specifies how the API responds to the request (either with information or error messages).</p>
+<p>We primarily use our API written in app.js as a means to serve web pages.</p>
+<p>In general, web APIs use four main HTTP methods to achieve a robust interface: GET, POST, PUT, and DELETE. For the purpose of our framework, you mainly need to understand GET and POST requests.</p>
+<p><strong>GET</strong></p>
+<p>When you perform a GET request on a specific URL, you retrieve information without modifying it in any way. The data that you receive in a GET request is specified by the response of the server. Think of it as getting information from a collection.</p>
+<p>If for example, I want to get all users from an arbitrary API, I could make a GET request to “https://{example_API_root}.com/users/”. Where “{example_API_root}” is the root URL of the host server, and “/users/” is specified by the routing.</p>
+<p><strong>POST</strong></p>
+<p>A POST request is primarily used to create a new resource. Think of it as adding new information to a collection.</p>
+<p>Note that this is an oversimplification of APIs and HTTP, and if you want to gain a better understanding of building APIs (such as with RESTful concepts), we recommend these links:</p>
+<ul>
+<li><a href="https://www.reddit.com/r/explainlikeimfive/comments/628y0c/eli5_what_is_an_api/">ELI5 for APIs</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP Requests</a></li>
+<li><a href="https://restfulapi.net/">RESTful APIs</a></li>
+</ul>
+<h3 id="jspsych_1">JsPsych</h3>
+<p>jsPsych is the backbone of our application and is the main reason why we transitioned from a Java framework to a JavaScript framework back in 2018.</p>
+<p>JsPsych is the go-to JavaScript library for running psych experiments in a browser. The timeline array provides an intuitive way to design and structure experiments for both developers and researchers.</p>
+<p>The jsPsych documentation provides a comprehensive guide for how to use the library. We recommend checking out their “Hello World” and “Simple Reaction Time Task” Tutorials:</p>
+<ul>
+<li><a href="https://www.jspsych.org/tutorials/hello-world/">Hello World Tutorial</a></li>
+<li><a href="https://www.jspsych.org/tutorials/rt-task/">rt-task Tutorial</a></li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Congrats on finishing the Software Developer section!</p>
+</div>
+<h2 id="technical-debt-and-writing-good-code">Technical Debt and Writing “Good” Code</h2>
+<p>Writing good code is hard. It takes years of experience to learn best practices well, and even the most experienced programmers will write shitty code from time to time. Nonetheless, in a project with as many moving pieces as our codebase, it is important to try our best to write “good” code and minimize technical debt.</p>
+<p>Technical debt is a concept in software development that reflects the implied cost of additional work caused by choosing an easy solution now instead of using a better approach that would take longer. Some examples are messy code formatting , duplications, unnecessarily large time complexity, architectural flaws, lacking documentation and other bad coding practices.</p>
+<p>Note that our team isn’t large, and as a result, relatively significant amounts of technical debt will naturally accumulate over time. It’s important to assess the choices we make to minimize technical debt build-up while also balancing the time it takes to implement the ‘optimal solution’.</p>
+<p>Some examples of technical debt present in our codebase right now (2021/02/07):</p>
+<ul>
+<li>Using jQuery over a more modern front-end library (such as React or Vue)</li>
+<li>Server-side architecture is nonoptimal, and basically, the only purpose of the express server is to serve static (mostly HTML) files to the client</li>
+<li>Not using best practices in coding. Ex.<ul>
+<li>Using <code>var</code> to instantiate variables where <code>let</code> or <code>const</code> would be better</li>
+<li>Repetitive code in places such as experiment and trial display HTML files</li>
+</ul>
+</li>
+</ul>
+<p>It is important to note that these fundamental design choices were likely made very early on in the design process of our framework, but as a result, developers in the present and future will need to work around these decisions long after they were made.</p>
+<p>This is not to say that those decisions were necessarily ‘wrong’ at the time. It is likely that they were developed with scope and stakeholders entirely considered, but as time went on, the stakeholder needs changed. But now, the design choices made early in development would require a massive refactor to change.</p>
+<p>In essence, think about minimizing technical debt as you are implementing new features, but not at the expense of sanity. Abstract for when you think there will be a use case for in the future, but not just for the sake of doing it.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Congrats on getting through our onboarding documentation! For your next steps please try to complete the following tasks:</p>
+<ol>
+<li>Implement your own Express.js server in Node.js to display “hello world”. (Software Developer only)</li>
+<li>Complete the jsPsych <a href="https://www.jspsych.org/tutorials/hello-world/">Hello World Tutorial</a> and <a href="https://www.jspsych.org/tutorials/rt-task/">rt-task Tutorial</a></li>
+<li>Make a new branch off of “master” and modify the codebase so that it can display large bullseyes instead of dots for JND foundational scatterplots.<ul>
+<li>Most of the coding that you will need to do can be found in the codebase already, and you will just need to modify some config files, the jnd data file, and the scatter plot file to produce those bullseye dots.</li>
+<li>You may find that there is already a bullseye case for the point shape, you can base the new bullseye off of this previous case.</li>
+<li>You can get creative with the actual bullseye dimensions and colours.</li>
+<li>When you are done, make a merge pull request to “master” and senior members on the team can review your code.</li>
+</ul>
+</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../architecture/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Architecture
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ca5457b8.min.js"></script>
+      
+    
+  </body>
+</html>
