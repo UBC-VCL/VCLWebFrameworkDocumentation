@@ -1,7 +1,17 @@
 # About
 
-## Documentation
+## Researchers
+
+Madison: Supervisor
 
 Ford: Lab Manager
 
-Jake: Lead Developer
+...
+
+## Developers
+
+Kevin: Technical Manager
+
+Jake: Lead Developer for Correlation Team
+
+...

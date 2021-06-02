@@ -4,14 +4,21 @@ theme:
   name: material
   features:
     - navigation.tabs
+  palette:
+    - primary: teal
+  logo: 'image/vcl.svg'
+  icon:
+    repo: fontawesome/brands/github
 
 markdown_extensions:
   - admonition
 
+repo_url: https://github.com/UBC-VCL/VCLWebFrameworkDocumentation
+
+
 nav:
   - Home:
-    - Welcome: home/welcome.md
-    - Getting Started: home/getting_started.md
+    - Welcome: welcome.md
   - About: about.md
   - Research:
     - Terminology: research/terminology.md
@@ -19,3 +26,5 @@ nav:
   - Development:
     - Architecture: development/architecture.md
     - Getting Started: development/getting_started.md
+    - Backlog: development/backlog.md
+    - Create New Experiment: development/create_new_experiment.md
