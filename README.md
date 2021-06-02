@@ -1,6 +1,8 @@
 # VCL Web Framework Documentation
 
-This documentation contains the details of both research and development of VCL Correlation Team. The intended audience is internal members and new members of VCL. Documentation is developed by Ford and Jake on May 2021.
+[VCL Web Framework Documentation](https://ubc-vcl.github.io/VCLWebFrameworkDocumentation/)
+
+This documentation contains the details of both research and development of VCL Correlation Team and is hosted on GitHub Pages. The intended audience is internal members and new members of VCL. Documentation is developed by Ford and Jake on May 2021.
 
 ## Set up
 
