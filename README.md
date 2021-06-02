@@ -29,7 +29,13 @@ mkdocs --version
 mkdocs serve
 ```
 
-To deploy to GitHub Pages please run **(This will override the current documentation)**
+4) Make a branch and request a pull resquest
+
+Once senior developer reviews the changes the branch will be merged
+
+## Deployment
+
+To deploy to GitHub Pages please run **(This will override the current documentation to the current local content)**
 
 ```
 mkdocs gh-deploy
